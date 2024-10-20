@@ -16,17 +16,18 @@
 
 </head>
 
-<body class="bg-gray-200 overflow-x-hidden">
-    <header class="fixed top-0 left-0  drop-shadow-custom-black  flex items-start w-full border-b">
+<body class="bg-slate-600 overflow-x-hidden">
+    <header class="fixed top-0 left-0    flex items-start w-full border-b">
 
         <nav class="bg-white flex flex-col px-8  justify-between h-screen max-w-[260px] container">
             <div class="w-full">
-                <div class="py-[25px] text-4xl text-gray-700 font-sans font-bold">
+                <div class="py-[25px] text-4xl font-sans font-bold">
                     <p>Cookentory</p>
                 </div>
 
 
-                <div class="w-full">
+                <div class="w-full pt-5">
+                    <p>Menu</p>
                     <ul class="mt-2 flex flex-col items-start gap-3">
                         <li class="w-full block"><a
                                 class="flex w-full hover:bg-gray-200 px-2 py-2 rounded items-center gap-3" href=""><svg
@@ -97,11 +98,11 @@
         <div class="flex items-center w-full bg-white mx-auto justify-between px-8 py-[25px]">
             <!-- Título -->
             <div class="flex-grow">
-                <h1 class="text-2xl font-semibold text-gray-900 font-sans">Dashboard</h1>
+                <h1 class="text-2xl font-semibold  font-sans">Dashboard</h1>
             </div>
 
             <!-- Buscador -->
-            <div class="w-[100%]">
+            <!-- <div class="w-[100%]">
                 <form action="#" class="flex mx-auto items-center max-w-[400px] border rounded-md border-gray-600/20">
                     <input type="text" placeholder="Buscar..."
                         class="block focus:outline-none py-2 rounded-tl-md rounded-bl-md text-lg w-full pl-1">
@@ -113,7 +114,7 @@
                         </svg>
                     </button>
                 </form>
-            </div>
+            </div> -->
 
             <!-- Notificaciones y Usuario -->
             <div class="flex items-center gap-10">
@@ -136,75 +137,112 @@
 
 
     <!-- Contenedor principal centrado -->
-    <main class="flex-1  pl-[295px] mt-[120px] px-8 py-8">
+    <main class="flex-1  max-w-[1200px] pl-[295px] mt-[120px] px-8 py-8">
 
         <section class="w-full flex items-center justify-center">
             <div class=" w-full">
                 <ul class=" w-full flex items-start justify-between gap-3">
-                    <li class="bg-white px-5 py-6 rounded border border-black/40 w-[90%] container">
-                        <div class="flex items-center w-full justify-between">
-                            <p class="text-lg">Ingresos totales</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-                            </svg>
 
-                        </div>
+                  
+                <!-- box -->
 
-                        <div class="mt-5">
-                            <p class="text-4xl font-bold">$15,231.90</p>
-                            <p class="text-base mt-2 text-black/80">+21% respecto al mes anterior</p>
-                        </div>
-                    </li>
-                    <li class="bg-white px-5 py-6 rounded border border-black/40  w-[90%] container">
-                        <div class="flex items-center w-full justify-between">
-                            <p class="text-lg">Ingresos totales</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-                            </svg>
+                <li class="bg-white px-7 py-6 flex items-center  container justify-start rounded">
+                     
 
-                        </div>
+                     <div class="flex w-full items-center gap-5">
+                     <div class="flex items-center justify-center border-[1px] border-blue-500 bg-blue-400/20  rounded-full px-3 py-3"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-blue-400 size-10">
+                      <path d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z" />
+                     <path fill-rule="evenodd" d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd" />
+                 </svg>
+                  </div>
+                     <div class="pr-4 text-center">
+                     <p class="text-[1.3rem]">Ingresos totales</p>
+                         <div class="mt-3">
+                         <p class="text-3xl font-bold">$15,231.90</p>
+                         <p class="text-[17x] mt-4 text-green-600 border-[1px] py-0.5 border-green-500 text-center block  rounded-full bg-green-500/10">+21% Aumento</p>
+                     </div>
+                     </div>
 
-                        <div class="mt-5">
-                            <p class="text-4xl font-bold">$15,231.90</p>
-                            <p class="text-base mt-2 text-black/80">+21% respecto al mes anterior</p>
-                        </div>
-                    </li>
-                    <li class="bg-white px-5 py-6 rounded border border-black/40 w-[90%] container">
-                        <div class="flex items-center w-full justify-between">
-                            <p class="text-lg">Ingresos totales</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-                            </svg>
+                     </div>
 
-                        </div>
+                     
+                 </li>
 
-                        <div class="mt-5">
-                            <p class="text-4xl font-bold">$15,231.90</p>
-                            <p class="text-base mt-2 text-black/80">+21% respecto al mes anterior</p>
-                        </div>
-                    </li>
-                    <li class="bg-white px-5 py-6 rounded border border-black/40 w-[90%] container">
-                        <div class="flex items-center w-full justify-between">
-                            <p class="text-lg">Ingresos totales</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-                            </svg>
 
-                        </div>
+                 <li class="bg-white px-7 py-6 flex items-center  container justify-start rounded">
+                     
 
-                        <div class="mt-5">
-                            <p class="text-4xl font-bold">$15,231.90</p>
-                            <p class="text-base mt-2 text-black/80">+21% respecto al mes anterior</p>
-                        </div>
-                    </li>
+                     <div class="flex w-full items-center gap-5">
+                     <div class="flex items-center justify-center border-[1px] border-blue-500 bg-blue-400/20  rounded-full px-3 py-3"> 
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-blue-400 size-10">
+                     <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                    </svg>
+
+                  </div>
+                     <div class="pr-4 text-center">
+                     <p class="text-[1.3rem]">Pedidos</p>
+                         <div class="mt-3">
+                         <p class="text-3xl font-bold">$15,231.90</p>
+                         <p class="text-[17x] mt-4 text-green-600 border-[1px] py-0.5 border-green-500 text-center block  rounded-full bg-green-500/10">+21% Aumento</p>
+                     </div>
+                     </div>
+
+                     </div>
+
+                     
+                 </li>
+
+                 <li class="bg-white px-7 py-6 flex items-center  container justify-start rounded">
+                     
+
+                     <div class="flex w-full items-center gap-5">
+                     <div class="flex items-center justify-center border-[1px] border-blue-500 bg-blue-400/20  rounded-full px-3 py-3"> 
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-blue-400 size-10">
+                    <path d="M5.566 4.657A4.505 4.505 0 0 1 6.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0 0 15.75 3h-7.5a3 3 0 0 0-2.684 1.657ZM2.25 12a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3v-6ZM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 0 1 6.75 6h10.5a3 3 0 0 1 2.683 1.657A4.505 4.505 0 0 0 18.75 7.5H5.25Z" />
+                    </svg>
+
+                  </div>
+                     <div class="pr-4 text-center">
+                     <p class="text-[1.3rem]">Productos</p>
+                         <div class="mt-3">
+                         <p class="text-3xl font-bold">$15,231.90</p>
+                         <p class="text-[17x] mt-4 text-green-600 border-[1px] py-0.5 border-green-500 text-center block  rounded-full bg-green-500/10">+21% Aumento</p>
+                     </div>
+                     </div>
+
+                     </div>
+
+                     
+                 </li>
+
+                 <li class="bg-white px-7 py-6 flex items-center  container justify-start rounded">
+                     
+
+                     <div class="flex w-full items-center gap-5">
+                     <div class="flex items-center justify-center border-[1px] border-blue-500 bg-blue-400/20  rounded-full px-3 py-3"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-blue-400 size-10">
+                      <path d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z" />
+                     <path fill-rule="evenodd" d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd" />
+                 </svg>
+                  </div>
+                     <div class="pr-4 text-center">
+                     <p class="text-[1.3rem]">Ingresos totales</p>
+                         <div class="mt-3">
+                         <p class="text-3xl font-bold">$15,231.90</p>
+                         <p class="text-[17x] mt-4 text-green-600 border-[1px] py-0.5 border-green-500 text-center block  rounded-full bg-green-500/10">+21% Aumento</p>
+                     </div>
+                     </div>
+
+                     </div>
+
+                     
+                 </li>
+
+
+                 
+                    
+                  
                    
                 </ul>
             </div>
